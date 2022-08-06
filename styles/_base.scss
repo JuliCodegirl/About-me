@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $base-font-family, sans-serif;
+    font-size: $font;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+header, footer {
+    background-color: $primary-bg-color;
+    color: $primary-text-color;
+}
+
+main {
+    background-color: $main-bg-color;
+    color: $main-text-color;
+}
+
+a {
+    text-decoration: none;
+    
+    &:visited, &:link, &:active {
+        color: inherit;
+    }
+}

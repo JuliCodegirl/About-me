@@ -1,1 +1,29 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Marck Script", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+header, footer {
+  background-color: #333030;
+  color: #fff;
+}
+
+main {
+  background-color: #ccc4c4;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited, a:link, a:active {
+  color: inherit;
+}/*# sourceMappingURL=style.css.map */
