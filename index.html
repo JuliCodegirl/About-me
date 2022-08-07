@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7f0b2a75dc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>About me</title>
@@ -16,22 +16,38 @@
 
 <body>
     <header>
-        <h1 class="headline">Немного обо мне</h1>
-        <nav class="main-menu">
-            <a href="#about" class="main-menu__item">Кто я такая?</a>
-            <a href="#my_life" class="main-menu__item">Моя жизнь</a>
-            <a href="#my_top" class="main-menu__item">Мой топ фильмов</a>
-            <a href="#contacts" class="main-menu__item">Где меня найти?</a>
-        </nav>
+        <div class="start">
+            <h1 class="headline">Немного обо мне</h1>
+            <nav class="main-menu">
+                <a href="#about" class="main-menu__item">Кто я такая?</a>
+                <a href="#my_life" class="main-menu__item">Моя жизнь</a>
+                <a href="#my_top" class="main-menu__item">Мой топ фильмов</a>
+                <a href="#contacts" class="main-menu__item">Где меня найти?</a>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <section id="about" class="about-me">
+            <div class="container container--about">
+                <div class="my-photo">
+                    <img src="../About-me/img/main_photo.JPG" alt="Мое фото">
+                </div>
+                <div class="presentation">
+                    <h2 class="presentation__headline">Привет!</h2>
+                    <p class="presentation__text">Меня зовут Юлия. Мне 27 лет и я живу в Минске</p>
+                    <i class="presentation__smile fa-solid fa-face-smile" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </section>
+
         <section id="my_life" class="life">
-            <div class="container">
+            <div class="container container--life">
                 <article class="item">
                     <p class="item__description">У меня есть любимые муж и маленькая дочурка</p>
                     <div class="item__photo">
-                        <img src="../About-me/img/my_family.jpg" alt="Моя семья" width="200">
+                        <img src="../About-me/img/my_family.jpg" alt="Моя семья">
                     </div>
                 </article>
                 <article class="item">
@@ -39,13 +55,13 @@
                         лет
                     </p>
                     <div class="item__photo">
-                        <img src="../About-me/img/chemist.JPG" alt="Я - химик" width="200">
+                        <img src="../About-me/img/chemist.JPG" alt="Я - химик">
                     </div>
                 </article>
                 <article class="item">
                     <p class="item__description">Я обожаю путешествия и активный отдых</p>
                     <div class="item__photo">
-                        <img src="../About-me/img/sportlife.JPG" alt="Активный отдых" width="200">
+                        <img src="../About-me/img/sportlife.JPG" alt="Активный отдых">
                     </div>
                 </article>
                 <article class="item">
@@ -60,12 +76,12 @@
         </section>
 
         <section id="my_top" class="top">
-            <div class="container">
-                <h2 class="small-headline">Мои любимые фильмы</h2>
+            <h2 class="small-headline">Мои любимые фильмы</h2>
+            <div class="container container--films">
                 <article class="film-item">
                     <a href="https://www.kinopoisk.ru/film/535341/" class="film-item__link">
                         <div class="film-item__poster">
-                            <img src="../About-me/img/1plus1.jpg" alt="1+1" width="300">
+                            <img src="../About-me/img/1plus1.jpg" alt="1+1">
                         </div>
                         <h3 class="film-item__title">1+1</h3>
                     </a>
@@ -73,7 +89,7 @@
                 <article class="film-item">
                     <a href="https://www.kinopoisk.ru/film/328/" class="film-item__link">
                         <div class="film-item__poster">
-                            <img src="../About-me/img/the_lord_of_the_rings.jpg" alt="Властелин колец" width="300">
+                            <img src="../About-me/img/the_lord_of_the_rings.jpg" alt="Властелин колец">
                         </div>
                         <h3 class="film-item__title">Властелин колец: Братство кольца</h3>
                     </a>
@@ -81,7 +97,7 @@
                 <article class="film-item">
                     <a href="https://www.kinopoisk.ru/film/8827/" class="film-item__link">
                         <div class="film-item__poster">
-                            <img src="../About-me/img/legends_of_the_fall.jpg" alt="Легенды осени" width="300">
+                            <img src="../About-me/img/legends_of_the_fall.jpg" alt="Легенды осени">
                         </div>
                         <h3 class="film-item__title">Легенды осени</h3>
                     </a>

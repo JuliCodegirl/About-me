@@ -16,6 +16,13 @@ header, footer {
   color: #fff;
 }
 
+section {
+  padding: 80px 20px 0;
+}
+section:last-child {
+  padding-bottom: 80px;
+}
+
 main {
   background-color: #ccc4c4;
   color: #000;
@@ -26,4 +33,140 @@ a {
 }
 a:visited, a:link, a:active {
   color: inherit;
+}
+
+.start {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px;
+}
+
+.headline {
+  margin-bottom: 25px;
+}
+
+.main-menu {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-menu__item:not(:last-child)::after {
+  content: "";
+  margin: 0 35px;
+  display: inline-block;
+  background-color: #D8D5D5;
+  width: 15px;
+  height: 2px;
+  vertical-align: middle;
+}
+
+.my-photo {
+  max-width: 50%;
+}
+.my-photo img {
+  width: 100%;
+  border: 1.5px solid #171717;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.presentation {
+  align-self: center;
+  margin-left: 25px;
+  font-size: 1.2rem;
+  letter-spacing: 0.07rem;
+}
+.presentation__text {
+  display: inline;
+}
+.presentation__smile {
+  color: #bd8906;
+}
+
+.life {
+  padding-bottom: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container--about {
+  max-width: 1000px;
+}
+.container--life {
+  max-width: 1475px;
+}
+.container--films {
+  max-width: 960px;
+}
+
+.item {
+  width: calc(25% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item:not(:last-child) {
+  margin-right: 25px;
+}
+.item__description {
+  font-size: 0.9rem;
+}
+.item__photo {
+  max-width: 350px;
+  margin-top: 15px;
+}
+.item__photo img {
+  width: 100%;
+  border: 1.5px solid #171717;
+  border-radius: 5px;
+}
+
+.small-headline {
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+}
+
+.film-item {
+  width: calc(33.3333333333% - 30px);
+}
+.film-item:not(:last-child) {
+  margin-right: 30px;
+}
+.film-item__title {
+  font-size: 0.9rem;
+  letter-spacing: 0.04rem;
+}
+.film-item__poster {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.film-item__poster img {
+  width: 100%;
+  border: 1.5px solid #171717;
+  border-radius: 5px;
+}
+
+.contacts-list {
+  padding: 30px 100px;
+}
+
+.contacts-headline {
+  letter-spacing: 0.06rem;
+  margin-bottom: 30px;
+}
+
+.social-networks__item {
+  display: inline-block;
+  transition: all 0.3s;
+}
+.social-networks__item:hover {
+  transform: scale(1.2);
+}
+.social-networks__item:first-child {
+  margin-right: 30px;
 }/*# sourceMappingURL=style.css.map */

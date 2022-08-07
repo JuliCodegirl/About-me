@@ -16,6 +16,14 @@ header, footer {
     color: $primary-text-color;
 }
 
+section {
+    padding: 80px 20px 0;
+
+    &:last-child {
+        padding-bottom: 80px;
+    }
+}
+
 main {
     background-color: $main-bg-color;
     color: $main-text-color;

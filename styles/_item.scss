@@ -1,0 +1,23 @@
+.item {
+    width: calc((100%/4) - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    &__description {
+        font-size: .9rem;
+    }
+
+    &__photo {
+        max-width: 350px;
+        margin-top: 15px;
+
+        img {
+            @include image-style;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+    &--about {
+        max-width: 1000px;
+    }
+
+    &--life {
+        max-width: calc(350px*4 + 25px*3);
+    }
+
+    &--films {
+        max-width: calc(300px*3 + 30px*2);
+    }
+    
+}

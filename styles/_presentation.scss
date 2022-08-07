@@ -1,0 +1,14 @@
+.presentation {
+    align-self: center;
+    margin-left: 25px;
+    font-size: 1.2rem;
+    letter-spacing: .07rem;
+
+    &__text {
+        display: inline;
+    }
+
+    &__smile {
+        color: #bd8906;
+    }
+}

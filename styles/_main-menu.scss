@@ -1,0 +1,16 @@
+.main-menu {
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__item:not(:last-child)::after {
+        content: "";
+        margin: 0 35px;
+        display: inline-block;
+        background-color: #D8D5D5;
+        width: 15px;
+        height: 2px;
+        vertical-align: middle;
+    }
+}

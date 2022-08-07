@@ -1,0 +1,21 @@
+.film-item {
+    width: calc((100%/3) - 30px);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__title {
+        font-size: .9rem;
+        letter-spacing: .04rem;
+    }
+
+    &__poster {
+        max-width: 300px;
+        margin: 0 auto;
+
+        img {
+            @include image-style;
+        }
+    }
+}
